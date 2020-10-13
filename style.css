@@ -11,7 +11,7 @@
 
 body{
     font-family: 'Raleway';
-    width: 1600px;
+    width: 1450px;
     margin: auto;
 }
 
@@ -33,6 +33,9 @@ a:visited{
 
 .header{
     display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -41,6 +44,11 @@ a:visited{
 .nav ul{
     display: flex;
     justify-content: flex-end;
+    list-style: none;
+}
+
+.nav li{
+    padding-right: 40px;
 }
 
 /* Main */
@@ -48,12 +56,22 @@ a:visited{
 main{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* Aside*/
 
 .search-filters{
     flex-basis: 100%;
+}
+
+.search{
+    display: flex;
+}
+
+.filters{
+    display: flex;
 }
 
 /* Article Hebergement à Marseille*/ 
@@ -63,9 +81,26 @@ main{
     flex-grow: 3;
 } 
 
+.hostel-section__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.hostel-prev{
+    background-color: white;
+    width: 30%;
+}
+
+/*.hostel-prev__image{
+
+}*/
+
 .hostel-prev__image img{
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 100%;
+
 }
 
 /* Article Les plus populaires*/
@@ -75,9 +110,13 @@ main{
     flex-grow: 1;
 }
 
+.hostel-popular{
+    background-color: white;
+}
+
 .hostel-popular__image img{
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
 }
 
 /* Article Activités à Marseille*/ 
@@ -96,6 +135,22 @@ main{
     flex: 23%;
     max-width: 23%;
 }
+
+/* responsive 2 colones : tablettes*/
+/*@media (max-width: 800px){
+    .activities-column{
+    flex: 45%;
+    max-width: 45%;
+    }
+}*/
+
+/* responsive 1 colone : télépone*/
+/*@media (max-width: 600px){
+    .activities-column{
+    flex: 98%;
+    max-width: 98%;
+    }
+}*/
 
 .activity-prev{
     border: 1px solid #F2F2F2;
@@ -136,4 +191,24 @@ main{
 .footer{
     background-color: #F2F2F2;
     display: flex;
+    padding-left: 50px;
+}
+
+.footer section{
+    flex-grow: 1;
+    margin-top: 30px;
+}
+
+.footer h3{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer li{
+    margin-bottom: 10px;    
 }
