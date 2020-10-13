@@ -1,0 +1,30 @@
+/* Définition des polices perso */
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('police/static/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Elements principaux de la page*/ 
+
+body{
+    font-family: 'Raleway';
+}
+
+/* Header*/ 
+
+/* Navigation */
+
+/* Main */
+
+/* Aside*/
+
+/* Article Hebergement à Marseille*/ 
+
+/* Article Les plus populaires*/
+
+/* Article Activités à Marseille*/ 
+
+/* Footer */
