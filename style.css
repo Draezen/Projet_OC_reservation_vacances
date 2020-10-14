@@ -1,16 +1,43 @@
 /* Définition des polices perso */
 
 @font-face{
-    font-family: 'Raleway';
-    src: url('police/static/Raleway-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Raleway-Thin';
+    src: url('police/static/Raleway-Thin.ttf');
 }
+
+@font-face{
+    font-family: 'Raleway-Light';
+    src: url('police/static/Raleway-Light.ttf');
+}
+
+@font-face{
+    font-family: 'Raleway-Regular';
+    src: url('police/static/Raleway-Regular.ttf');
+    /*font-weight: normal;
+    font-style: normal;*/
+}
+
+@font-face{
+    font-family: 'Raleway-Medium';
+    src: url('police/static/Raleway-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'Raleway-Bold';
+    src: url('police/static/Raleway-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Raleway-ExtraBold';
+    src: url('police/static/Raleway-ExtraBold.ttf');
+}
+
+
 
 /* Elements principaux de la page*/ 
 
 body{
-    font-family: 'Raleway';
+    font-family: 'Raleway-Regular';
     width: 1450px;
     margin: auto;
 }
@@ -25,7 +52,7 @@ a{
  }
  */
 
-a:visited{
+a:link, a:visited{
     color: black;
 }
 
@@ -38,6 +65,32 @@ a:visited{
     padding-right: 50px;
 }
 
+.heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading__logo{
+    width: 100px;
+    height: 50px;
+}
+
+.heading__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.heading__title{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1.3em;
+    margin: 10px 0px;
+}
+
+.heading__description{
+    font-family: 'Raleway-Light';
+    font-size: 1em;
+    margin: 0 0 10px 0;
+}
 
 /* Navigation */
 
@@ -45,12 +98,21 @@ a:visited{
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    margin-top: 32px;
 }
 
 .nav li{
-    padding-right: 40px;
+    padding-right: 50px;
 }
 
+/*.nav__link a:focus{
+    color: #0065fc;
+}*/
+
+.nav__login a{
+    color: #0065fc;
+    font-weight: bold;
+}
 /* Main */
 
 main{
@@ -68,10 +130,52 @@ main{
 
 .search{
     display: flex;
+    /*border: 2px solid black;*/
+}
+
+.search__logo{
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 15px 0px 0 15px ;
+}
+
+.search__input{
+    margin-left: 0px;
+    
+}
+
+.search__input input{
+    height: 46px;
+    padding-left: 15px;
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1.1em;
+    border: 1px solid #F2F2F2;
+}
+
+.search__button input{
+    height: 50px;
+    padding: 14px;
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1.1em;
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid black;
+    border-radius: 0 15px 15px 0;
 }
 
 .filters{
     display: flex;
+}
+
+.filters{
+    list-style: none;
+    padding: 0px;
+}
+
+.filters li{
+    font-family: 'Raleway-Bold';
+    margin-right: 80px;
+    font-size: 1.3em;
 }
 
 /* Article Hebergement à Marseille*/ 
@@ -192,6 +296,7 @@ main{
     background-color: #F2F2F2;
     display: flex;
     padding-left: 50px;
+    padding-right: 150px;
 }
 
 .footer section{
@@ -201,7 +306,7 @@ main{
 
 .footer h3{
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .footer ul{
