@@ -38,7 +38,7 @@
 
 
 body{
-    font-family: 'Raleway-Regular';
+    font-family: 'Raleway-Medium';
     width: 1450px;
     margin: auto;
 }
@@ -54,12 +54,6 @@ a{
 .checked{
     color: #0065FC;
 }
-
-/*
-*{
-    box-sizing: border-box;
- }
- */
 
 a:link, a:visited{
     color: black;
@@ -111,16 +105,17 @@ a:link, a:visited{
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin-top: 32px;
+    padding-top: 32px;
 }
 
 .nav li{
     padding-right: 50px;
+    font-size: 1.1em;
 }
 
-/*.nav__link a:focus{
+.nav__link a:hover{
     color: #0065fc;
-}*/
+}
 
 .nav__login a{
     color: #0065fc;
@@ -202,7 +197,7 @@ main{
     border: 3px solid #f2f2f2;
     border-radius: 20px;
     background-color: white;
-    font-family: 'Raleway-Bold';
+    font-family: 'Raleway-ExtraBold';
     font-size: 1em;
     margin-right: 50px;
     padding:0 20px 0 0;
@@ -268,35 +263,75 @@ main{
 
 .hostel-section{
     background-color: #F2F2F2;
+    border-radius: 25px;
     flex-grow: 3;
-    max-width: 850px;
+    max-width: 800px;
     margin-right: 50px;
-    max-height: 800px;
+    margin-bottom: 30px;
+    height: 560px;
+    padding: 30px 40px;
 } 
+
+
+.hostel-section__heading{
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 .hostel-section__flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .hostel-prev{
     background-color: white;
+    border-radius: 20px;
     width: 30%;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-
-/*.hostel-prev__image{
-
+/*.hostel-prev a{
+    height: 100%;
 }*/
 
-.hostel-prev__image img{
-    width: 90%;
-    height: 100%;
-
+.hostel-prev__image{
+    margin: 5px 5px 0 5px;
+    width: 100%;
 }
 
+.hostel-prev__image img{
+    width: 230px;
+    height: 100%;
+    max-height: 110px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.hostel-prev__heading{
+    font-family: 'Raleway-Bold';
+    margin: 0 0 5px 0;
+    padding: 0 0 0 10px;
+}
+
+.hostel-prev__price{
+    margin: 0 0 5px 0;
+    padding: 0 0 0 10px;
+}
+
+.hostel-prev__rating{
+    margin: 0 0 5px 0;
+    padding: 0 0 0 10px;
+}
+
+.hostel-section__footer{
+    font-family: 'Raleway-Bold';
+    font-size: 1.1em;
+}
 
 /* Article Les plus populaires*/
 
@@ -316,8 +351,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 45px;
-    padding-top: 20px;
+    margin-left: 40px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -327,7 +362,7 @@ main{
 }
 
 .popular-section__heading{
-    font-family: 'Raleway-Bold';
+    font-family: 'Raleway-ExtraBold';
     display: inline;
     margin: 0px;
     font-size: 1.5em;
@@ -336,6 +371,7 @@ main{
     font-size: 1.3em;
     font-weight: bold;
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .hostel-popular{
@@ -394,10 +430,11 @@ main{
 
 .activities-section{
     flex-basis: 100%;
+    margin-bottom: 20px;
 }
 
 .activities-section__heading{
-    font-family: 'Raleway-Bold';
+    font-family: 'Raleway-ExtraBold';
     font-size: 1.5em;
 }
 
@@ -433,7 +470,7 @@ main{
 .activity-prev{
     border: 1px solid #F2F2F2;
     border-radius: 10px;
-    box-shadow: 2px 2px 0px #F2F2F2;
+    box-shadow: 0px 3px 6px 6px #F2F2F2;
     height: 46%;
     margin-bottom: 12%;
 }
@@ -451,7 +488,7 @@ main{
 }
 
 .activity-prev__image{
-    margin-top: 0px;
+    margin: 0px;
     height: 80%;
 }
 
@@ -478,8 +515,9 @@ main{
 
 .activity-prev__caption{
     font-family: 'Raleway-Bold';
-    font-size: 1em;
+    font-size: 1.1em;
     padding-left: 20px;
+    margin-top: 12px;
 }
 
 
@@ -491,6 +529,7 @@ main{
     display: flex;
     padding-left: 50px;
     padding-right: 150px;
+    padding-bottom: 30px;
 }
 
 .footer section{
@@ -499,8 +538,8 @@ main{
 }
 
 .footer h3{
-    font-weight: bold;
-    font-size: 1.1em;
+    font-family: 'Raleway-Bold';
+    font-size: 1.3em;
 }
 
 .footer ul{
@@ -509,5 +548,5 @@ main{
 }
 
 .footer li{
-    margin-bottom: 10px;    
+    margin-bottom: 12px;    
 }
