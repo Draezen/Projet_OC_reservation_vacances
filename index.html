@@ -30,14 +30,17 @@
             <form action="/action_page.php" method="post" class="search">
                 <p class="fas fa-map-marker-alt search__logo"></p>
                 <p class="search__input"><input type="text" placeholder="Marseille, France"/></p>
-                <p class="search__button"><input type="button" value="Rechercher"/></p>
+                <p class="search__button  search__button-large"><input type="button" value="Rechercher"/></p>
+                <p class="search__button  search__button-small"><input type="button" value="&#xf002" class="icon-search"/></p>
             </form>
             <div class="filters">
                 <h3 class="filters__title">Filtres</h3>
-                <button class="filters__button"><i class="fas fa-money-bill-wave"></i>Economique</button>
-                <button class="filters__button"><i class="fas fa-child"></i>Familial</button>
-                <button class="filters__button"><i class="fas fa-heart"></i>Romantique</button>
-                <button class="filters__button"><i class="fas fa-dog"></i>Animaux autorisés</button>
+                <div class="filters__flex"> 
+                    <button class="filters__button"><i class="fas fa-money-bill-wave"></i>Economique</button>
+                    <button class="filters__button"><i class="fas fa-child"></i>Familial</button>
+                    <button class="filters__button"><i class="fas fa-heart"></i>Romantique</button>
+                    <button class="filters__button"><i class="fas fa-dog"></i>Animaux autorisés</button>
+                </div>
             </div>
             <div class="search-filters__info">
                 <i class="fas fa-info"></i>

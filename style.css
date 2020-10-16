@@ -37,6 +37,20 @@ body{
     margin: auto;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 500px) and (max-width: 1024px){
+    body{
+        width: auto;
+    }
+}
+
 /* link*/
 a{
     text-decoration: none;
@@ -92,6 +106,14 @@ a:link, a:visited{
     margin: 0 0 10px 0;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .header{
+        padding: 30px 0 0 0px;
+        flex-wrap: wrap;
+    }
+}
+
 
 /* ---------------------------------  Navigation ------------------------------ */
 
@@ -107,6 +129,14 @@ a:link, a:visited{
     justify-content: flex-end;
     list-style: none;
     padding-left: 0px;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .nav ul{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
 
 .nav li{
@@ -133,6 +163,13 @@ main{
     padding: 0 50px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    main{
+        flex-direction: column;
+        padding: 0px;
+    }
+}
 
 /* ----------------------------------  Aside  ------------------------------ */
 
@@ -165,6 +202,14 @@ main{
     border: 1px solid #F2F2F2;
 }
 
+.search__button-small{
+    display: none;
+}
+
+.icon-search{
+    font-family: FontAwesome !important;
+}
+
 .search__button input{
     height: 50px;
     padding: 14px;
@@ -184,6 +229,30 @@ main{
     outline: none;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .search-filters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-filters{
+        order: 1;
+    }
+    .search{
+        width: 90%;
+    }
+    .search__button-small{
+        display: inline-block ;
+    }
+    .search__button-large{
+        display: none;
+    }
+    .search__button input{
+        border-radius: 15px;
+    }
+}
+
 /* Filters */
 
 .filters{
@@ -195,6 +264,10 @@ main{
     display: inline;
     margin: 1px 50px 1px 0;
     padding-top: 10px;
+}
+
+.filters__flex{
+    display: flex;  
 }
 
 .filters__button{
@@ -242,6 +315,36 @@ main{
     padding:12px 11px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .filters{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .filters__flex{
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .filters__flex :nth-child(2){
+        order: 1;
+    }
+    .filters__button{
+        margin: 0 0 10px 0;
+        padding: 0px 15px 0px 0;
+        font-size: 1.1em;
+        border-radius: 40px;
+    }
+    .filters__button i {
+        font-size: 1.1em;
+    }
+}
+
 
 /* Infos */
 .search-filters__info{
@@ -262,6 +365,13 @@ main{
     padding: 3px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .search-filters__info{
+        width: 90%;
+        margin: 20px 0;
+    }
+}
 
 /* -----------------------  Article Hebergement à Marseille  ---------------------- */ 
 
@@ -276,6 +386,16 @@ main{
     padding: 30px 40px;
 } 
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .hostel-section{
+        margin: 0 0 30px 0 ;
+        padding: 0px;
+        order: 3;
+        background-color: white;
+    }
+}
+
 .hostel-section__heading{
     font-family: 'Raleway-ExtraBold';
     font-size: 1.5em;
@@ -289,10 +409,18 @@ main{
     margin-bottom: 20px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .hostel-section__flex{
+        flex-direction: column;
+    }
+}
+
 /* carte d'hotel*/
 .hostel-prev{
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 3px 6px 6px #F2F2F2;
     width: 30%;
     margin: 10px 0 20px 0;
 }
@@ -337,19 +465,40 @@ main{
     max-height: 620px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .popular-section{
+        max-width: 100%;
+        width: 100%;
+        order: 2;
+        border-radius: 0px;
+    }
+}
+
 .popular-section__flex{
-    width: 80%;
+    width: 100%;
     height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 40px;
     padding: 30px 0 20px 0;
+    align-items: center;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .popular-section__flex{
+        width: 100%;
+        margin: 0px;
+        align-items: center;
+        padding: 0px;
+    }
 }
 
 .popular-section__heading__flex{
     display: flex;
     justify-content: space-between;
+    width: 90%;
 }
 
 .popular-section__heading{
@@ -369,6 +518,14 @@ main{
     background-color: white;
     border-radius: 20px;
     height: 150px;
+    width: 90%;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .hostel-popular{
+    width: 90%;
+    }
 }
 
 .hostel-popular a{
@@ -426,6 +583,14 @@ main{
     margin-bottom: 20px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .activities-section{
+        order: 4;
+    }
+}
+
+
 .activities-section__heading{
     font-family: 'Raleway-ExtraBold';
     font-size: 1.5em;
@@ -445,21 +610,22 @@ main{
 }
 
 /* responsive 2 colones : tablettes*/
-/*@media (max-width: 800px){
+@media (min-width: 500px) and (max-width: 1024px){
     .activities-column{
     flex: 45%;
     max-width: 45%;
     }
-}*/
+}
 
-/* responsive 1 colone : télépone*/
-/*@media (max-width: 600px){
+/*responsive 1 colone : télépone*/
+@media (min-width: 0px) and (max-width: 480px){
     .activities-column{
-    flex: 98%;
-    max-width: 98%;
+    flex: 90%;
+    max-width: 90%;
     }
-}*/
+}
 
+/* carte d'hotel*/
 .activity-prev{
     border: 1px solid #F2F2F2;
     border-radius: 10px;
@@ -485,6 +651,7 @@ main{
     height: 80%;
 }
 
+
 .activity-prev-small__image{
     height: 70%;
 }
@@ -495,6 +662,13 @@ main{
 
 .activity-prev-high__image{
     height: 90%;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .activity-prev__image{
+        height: 30%;
+    }
 }
 
 .activity-prev__image img{
@@ -523,9 +697,24 @@ main{
     padding: 0 150px 30px 50px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .footer{
+        flex-direction: column;
+        padding: 0 0 30px 30px;
+    }
+}
+
 .footer section{
     flex-grow: 1;
     margin-top: 30px;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .footer section{
+        margin-top: 0px;
+    }
 }
 
 .footer h3{
