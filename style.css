@@ -45,11 +45,11 @@ body{
 }
 
 /* tablet */
-/*@media screen and (min-width: 500px) and (max-width: 1024px){
+@media screen and (min-width: 480px) and (max-width: 1024px){
     body{
         width: auto;
     }
-}*/
+}
 
 /* link*/
 a{
