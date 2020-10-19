@@ -398,16 +398,6 @@ main{
     padding: 30px 40px;
 } 
 
-/* mobile */
-@media screen and (min-width: 0px) and (max-width: 480px){
-    .hostel-section{
-        margin: 0 0 30px 0 ;
-        padding: 0px;
-        order: 3;
-        background-color: white;
-    }
-}
-
 .hostel-section__heading{
     font-family: 'Raleway-ExtraBold';
     font-size: 1.5em;
@@ -421,13 +411,6 @@ main{
     margin-bottom: 20px;
 }
 
-/* mobile */
-@media screen and (min-width: 0px) and (max-width: 480px){
-    .hostel-section__flex{
-        flex-direction: column;
-    }
-}
-
 /* carte d'hotel*/
 .hostel-prev{
     background-color: white;
@@ -435,15 +418,16 @@ main{
     box-shadow: 0px 3px 6px 6px #F2F2F2;
     width: 30%;
     margin: 10px 0 20px 0;
+    padding: 5px;
 }
 
 .hostel-prev__image{
     width: 100%;
-    margin: 5px 5px 0 5px;
+    margin: 0;
 }
 
 .hostel-prev__image img{
-    width: 230px;
+    width: 100%;
     height: 100%;
     max-height: 110px;
     border-radius: 20px 20px 0 0;
@@ -462,6 +446,40 @@ main{
 .hostel-section__footer{
     font-family: 'Raleway-Bold';
     font-size: 1.1em;
+}
+
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .hostel-section{
+        order: 3;
+        background-color: white;
+        max-width: 100%;
+        width: 100%;
+        height: 1400px;
+        border-radius: 0px;
+        margin: 20px 0 0 0;
+        padding: 0px;
+    }
+    .hostel-section__heading{
+        padding-left: 20px;
+    }
+    
+    .hostel-section__flex{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        margin: 0 0 30px 0;
+        padding: 0px;
+    }
+    .hostel-prev{
+        width: 90%;
+        padding: 5px;
+        margin: 0px;
+    }
+    .hostel-section__footer{
+        padding-left: 15px;
+    }
 }
 
 
@@ -584,66 +602,38 @@ main{
 
 .activities-section{
     flex-basis: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    height: 500px;
 }
-
-/* mobile */
-@media screen and (min-width: 0px) and (max-width: 480px){
-    .activities-section{
-        order: 4;
-    }
-}
-
 
 .activities-section__heading{
     font-family: 'Raleway-ExtraBold';
     font-size: 1.5em;
 }
 
-.activities-row{
+.activities-flex{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.activities-column{
-    flex: 23%;
-    max-width: 23%;
-    max-height: 500px;
-    margin-bottom: 50px;
-}
-
-/* responsive 2 colones : tablettes*/
-@media (min-width: 500px) and (max-width: 1024px){
-    .activities-column{
-    flex: 45%;
-    max-width: 45%;
-    }
-}
-
-/*responsive 1 colone : télépone*/
-@media (min-width: 0px) and (max-width: 480px){
-    .activities-column{
-    flex: 90%;
-    max-width: 90%;
-    }
+    height: 85%;
 }
 
 /* carte d'hotel*/
 .activity-prev{
     border: 1px solid #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 3px 6px 6px #F2F2F2;
-    height: 46%;
-    margin-bottom: 12%;
+    height: 45%;
+    width: 22%;
 }
 
 .activity-prev-small{
-    height: 31%;
+    height: 35%;
 }
 
 .activity-prev-medium{
-    height: 61%;
+    height: 55%;
 }
 
 .activity-prev-high{
@@ -652,34 +642,26 @@ main{
 
 .activity-prev__image{
     margin: 0px;
-    height: 80%;
+    height: 75%;
 }
 
-
 .activity-prev-small__image{
-    height: 70%;
+    height: 68%;
 }
 
 .activity-prev-medium__image{
-    height: 85%;
+    height: 80%;
 }
 
 .activity-prev-high__image{
-    height: 90%;
-}
-
-/* mobile */
-@media screen and (min-width: 0px) and (max-width: 480px){
-    .activity-prev__image{
-        height: 30%;
-    }
+    height: 88%;
 }
 
 .activity-prev__image img{
     width: 100%;
     height: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     object-fit: cover;
     object-position: 100%;
 }
@@ -691,6 +673,38 @@ main{
     margin-top: 12px;
 }
 
+/* mobile */
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .activities-section{
+        order: 4;
+        height: 1400px;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 100px;
+    }
+    .activities-section__heading{
+        margin: 15px 0 10px 0;
+        padding-left: 15px;
+    }
+    .activities-flex{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .activity-prev{
+        width: 92%;
+        height: 200px;
+        margin: 0px;   
+    }
+    .activity-prev__image{
+        height: 80%;
+    }
+    .activity-prev__image img{
+        height: 100%;
+    }
+}
 
 /* ----------------------------------  Footer ----------------------------------- */
 
