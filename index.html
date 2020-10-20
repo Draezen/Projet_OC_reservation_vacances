@@ -40,17 +40,16 @@
     <main>
         <aside class="search-filters">
             <form action="/action_page.php" method="post" class="search">
-                <p class="fas fa-map-marker-alt search__logo"></p>
-                <p class="search__input">
-                    <input type="text" placeholder="Marseille, France"/>
-                </p>
-                <p class="search__button  search__button-large">
-                    <input type="button" value="Rechercher"/>
-                </p>
-                <p class="search__button  search__button-small">
-                    <input type="button" value="&#xf002;" class="icon-search"/>
-                </p>
+                <i class="fas fa-map-marker-alt search__logo"></i>
+                <input type="text" placeholder="Marseille, France" class="search__input"/>
+                <button class="search__button  search__button-large" disabled>
+                    Rechercher
+                </button>
+                <button class="search__button  search__button-small" disabled>
+                    <i class="fas fa-search"></i>
+                </button>
             </form>
+
             <div class="filters">
                 <h3 class="filters__title">
                     Filtres
@@ -85,7 +84,7 @@
             <div class="hostel-section__flex">
                 <article class="hostel-prev">
                     <a href="#">
-                        <p class="hostel-prev__image"><img src="img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo d'une chambre de l'Auberge de la Cannebière" class="hostel-prev__image">
                         <h3 class="hostel-prev__heading">
                             Auberge la Cannebière
                         </h3>
@@ -104,7 +103,7 @@
 
                 <article class="hostel-prev">
                     <a href="#">
-                        <p class="hostel-prev__image"><img src="img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo d'une chambre de l'Hôtel du port" class="hostel-prev__image">
                         <h3 class="hostel-prev__heading">
                             Hôtel du port
                         </h3>
@@ -123,7 +122,7 @@
 
                 <article class="hostel-prev">
                     <a href="#">
-                        <p class="hostel-prev__image"><img src="img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo d'une chambre de l'Hôtel des mouettes" class="hostel-prev__image">
                         <h3 class="hostel-prev__heading">
                             Hôtel Les mouettes
                         </h3>
@@ -142,7 +141,7 @@
 
                 <article class="hostel-prev">
                     <a href="#">
-                        <p class="hostel-prev__image"><img src="img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo d'une chambre de l'Hôtel de la mer" class="hostel-prev__image">
                         <h3 class="hostel-prev__heading">
                             Hôtel de la mer
                         </h3>
@@ -161,7 +160,7 @@
 
                 <article class="hostel-prev">
                     <a href="#">
-                        <p class="hostel-prev__image"><img src="img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo d'une chambre de l'Auberge Le Panier" class="hostel-prev__image">
                         <h3 class="hostel-prev__heading">
                             Auberge Le Panier
                         </h3>
@@ -180,7 +179,7 @@
 
                 <article class="hostel-prev">
                     <a href="#">
-                        <p class="hostel-prev__image"><img src="img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo d'une chambre de l'Hôtel chez Amina" class="hostel-prev__image">
                         <h3 class="hostel-prev__heading">
                             Hôtel chez Amina
                         </h3>
@@ -203,17 +202,16 @@
         </article>
 
         <article class="popular-section">
-            <div class="popular-section__flex">
                 <header class="popular-section__heading__flex">
                     <h2 class="popular-section__heading">
                         Les plus populaires
                     </h2>
-                    <p class="fas fa-chart-line"></p>
+                    <i class="fas fa-chart-line"></i>
                 </header>
 
                 <article class="hostel-popular">
                     <a href="#">
-                        <p class="hostel-popular__image"><img src="img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo d'une chambre de l'Hôtel le Soleil du matin" class="hostel-popular__image">
                         <h3 class="hostel-popular__heading">
                             Hôtel Le Soleil du matin
                         </h3>
@@ -232,7 +230,7 @@
     
                 <article class="hostel-popular">
                     <a href="#">
-                        <p class="hostel-popular__image"><img src="img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo d'une chambre Au coeur de l'eau Chambres d'hotes" class="hostel-popular__image">
                         <h3 class="hostel-popular__heading">
                             Au coeur de l'eau Chambres d'hôtes
                         </h3>
@@ -251,7 +249,7 @@
     
                 <article class="hostel-popular">
                     <a href="#">
-                        <p class="hostel-popular__image"><img src="img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="une photo de chambre d'hotel"></p>
+                        <img src="img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo d'une chambre de l'Hôtel Tout bleu et Blanc" class="hostel-popular__image">
                         <h3 class="hostel-popular__heading">
                             Hôtel Tout bleu et Blanc
                         </h3>
@@ -267,8 +265,6 @@
                         </ul>
                     </a>
                 </article>
-            </div>
-
 
         </article>            
         
@@ -280,7 +276,7 @@
             <div class="activities-flex">
                     <article class="activity-prev activity-prev-high">
                         <a href="#">
-                            <p class="activity-prev__image  activity-prev-high__image"><img src="img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="la photo d'un port"></p>
+                            <img src="img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du Vieux port de Marseille" class="activity-prev__image  activity-prev-high__image">
                             <h3 class="activity-prev__caption">
                                 Vieux Port
                             </h3>
@@ -289,7 +285,7 @@
 
                     <article class="activity-prev  activity-prev-medium">
                         <a href="#">
-                            <p class="activity-prev__image  activity-prev-medium__image"><img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="la photo d'un fort"></p>
+                            <img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du Fort de Pomègues" class="activity-prev__image  activity-prev-medium__image">
                             <h3 class="activity-prev__caption">
                                 Fort de Pomègues
                             </h3>
@@ -298,7 +294,7 @@
         
                     <article class="activity-prev  activity-prev-small">
                         <a href="#">
-                            <p class="activity-prev__image  activity-prev-small__image"><img src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="la photo d'une île"></p>
+                            <img src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo des île du Frioul" class="activity-prev__image  activity-prev-small__image">
                             <h3 class="activity-prev__caption">
                                 Îles du Frioul
                             </h3>
@@ -306,17 +302,17 @@
                     </article>   
 
                     <article class="activity-prev activity-prev-high">
-                    <a href="#">
-                        <p class="activity-prev__image  activity-prev-high__image"><img src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="la photo d'un parc"></p>
-                        <h3 class="activity-prev__caption">
-                            Parc National des Calanques
-                        </h3>
-                    </a>
+                        <a href="#">
+                            <img src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo du Parc National des Calanques" class="activity-prev__image  activity-prev-high__image">
+                            <h3 class="activity-prev__caption">
+                                Parc National des Calanques
+                            </h3>
+                        </a>
                     </article>
 
                     <article class="activity-prev">
                         <a href="#">
-                            <p class="activity-prev__image"><img src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="la photo d'une basilique"></p>
+                            <img src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de la basilique Notre-Dame-de-la-Garde" class="activity-prev__image">
                             <h3 class="activity-prev__caption">
                                 Notre-Dame-de-la-Garde
                             </h3>
@@ -325,7 +321,7 @@
 
                     <article class="activity-prev">
                         <a href="#">
-                            <p class="activity-prev__image"><img src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="la photo d'un parc"></p>
+                            <img src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du Parc Longchamp" class="activity-prev__image">
                             <h3 class="activity-prev__caption">
                                 Parc Longchamp
                             </h3>
