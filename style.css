@@ -37,17 +37,17 @@ body{
     margin: auto;
 }
 
-/* mobile */
-@media screen and (max-width: 480px){
+/* mobile et tablette*/
+@media screen and (max-width: 600px){
     body{
         width: 100%;
     }
 }
 
 /* tablet */
-@media screen and (min-width: 481px) and (max-width: 1024px){
+@media screen and (min-width: 601px) and (max-width: 1024px){
     body{
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -82,11 +82,18 @@ a:link, a:visited{
 
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .header{
         padding: 1.9em 0 0 0;
         flex-wrap: wrap;
         margin-bottom: 1.25em;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .header{
+        padding: 1em 0 0 0;
     }
 }
 
@@ -134,7 +141,7 @@ a:link, a:visited{
 }
 
 /* mobile */
-@media screen  and (max-width: 480px){
+@media screen  and (max-width: 600px){
     .nav ul{
         flex-wrap: wrap;
         justify-content: space-between;
@@ -169,6 +176,22 @@ a:link, a:visited{
     }
 }
 
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .nav__logo{
+        width: 50%;
+        padding: 0.5em 0 0 1.2em;
+    }
+    
+    .nav__logo img{
+        width: 7.3em;
+        height: 4.1em;
+    }
+    .nav__link, .nav__login{
+        font-size: 1.2em;
+    }
+}
+
 
 /* --------------------------------  Heading  ------------------------------ */
 
@@ -191,11 +214,24 @@ a:link, a:visited{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .heading{
-        padding: 0 1.9em 0 1.2em;
+        width: 90%;
+        margin: auto;
     }
 }
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .heading{
+        padding: 0 0 0 1.2em;
+        margin-bottom: 1em;
+    }
+    .heading__description{
+    font-size: 1.2em;
+    }
+}
+
 
 /* ---------------------------------  Main  -------------------------------- */
 
@@ -208,13 +244,20 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     main{
         flex-direction: column;
         padding: 0;
     }
 }
 
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    main{
+        flex-direction: column;
+        padding: 0 2em 0 2em;
+    }
+}
 /* ----------------------------------  Aside  ------------------------------ */
 
 
@@ -271,18 +314,16 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .search-filters{
-        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .search-filters{
+        justify-content: center;
         order: 1;
     }
     .search{
         width: 90%;
-        margin: 0;
+        margin: auto;
     }
     .search__input{
         width: 100%;
@@ -295,6 +336,15 @@ main{
     }
     .search__button input{
         border-radius: 1em;
+    }
+}
+
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .search-filters{
+        width: 100%;
+        flex-direction: column;
     }
 }
 
@@ -361,14 +411,15 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .filters{
         flex-direction: column;
         flex-wrap: wrap;
         width: 90%;
+        justify-content: center;
+        margin: 1.5em auto 0 auto;
     }
     .filters__flex{
-        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -388,8 +439,21 @@ main{
     }
 }
 
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .filters{
+        flex-wrap: wrap;
+    }
+    .filters__flex{
+        flex-wrap: wrap;
+    }
+    .filters__button{
+        margin-top: 1em;
+    }
+}
 
 /* Infos */
+
 .search-filters__info{
     margin: 2.5em 0;
 }
@@ -408,10 +472,10 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .search-filters__info{
         width: 90%;
-        margin: 0.6em 0;
+        margin: 0.8em auto;
         display: flex;
         align-content: flex-start;
     }
@@ -424,6 +488,17 @@ main{
         margin: 0 1em 1em 0;
     }
 }
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .fa-info{
+        font-size: 1.2em;
+    }
+    .search-filters__info__title{
+        font-size: 1.2em;
+    }
+}
+
 
 /* -----------------------  Article Hebergement à Marseille  ---------------------- */ 
 
@@ -485,7 +560,7 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .hostel-section{
         order: 3;
         background-color: white;
@@ -518,6 +593,32 @@ main{
         width: 85%;
         margin: auto;
         display: block;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .hostel-section{
+        width: 100%;
+        max-width: 100%;
+        height: 38em;
+        padding: 0;
+        order: 3;
+    }
+    .hostel-section__heading{
+        padding: 0.5em 0 0 1.2em;
+        margin-bottom: 0.5em;
+    }
+    .hostel-section__flex{
+        justify-content: space-around;
+        margin-bottom: 0.8em;
+    }
+    .hostel-prev{
+        width: 28%;
+    }
+    .hostel-section__footer{
+        margin: 0 0 0 1.2em;
+        font-size: 1.2em;
     }
 }
 
@@ -606,13 +707,12 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .popular-section{
         max-width: 100%;
         width: 100%;
         order: 2;
         border-radius: 0;
-        margin-top: 1.25em;
     }
     .popular-section__heading{
         font-size: 1.3em;
@@ -621,6 +721,34 @@ main{
         width: 90%;
     }
 }
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .popular-section{
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+        margin-bottom: 2.5em;
+    }
+    .hostel-popular a{
+        justify-content: space-around;
+    }
+    .hostel-popular__image{
+        width: 50%;
+    }
+    .hostel-popular__heading{
+        font-size: 1.4em;
+        margin: 0;
+    }
+    .hostel-popular__price{
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .hostel-popular__rating{
+        font-size: 1em;
+    }
+}
+
 
 /* ------------------------  Article Activités à Marseille  ------------------------- */ 
 
@@ -697,7 +825,7 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .activities-section{
         order: 4;
         height: 88em;
@@ -726,6 +854,34 @@ main{
         height: 75%;
     }
 }
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .activities-section{
+        width: 100%;
+        height: 50em;
+        margin: 1em 0 2em 0;
+        order: 4;
+    }
+    .activities-flex{
+        flex-direction: row;
+        height: 90%;
+    }
+    .activity-prev{
+        width: 30%;
+        height: 50%;  
+        margin: 0 0 1.5em 0;
+    }
+    .activity-prev__image{
+        height: 80%;
+    }
+    .activity-prev__caption{
+        text-align: center;
+        margin: 0;
+        padding: 1em 0 0 0;
+    }
+}
+
 
 /* ----------------------------------  Footer ----------------------------------- */
 
@@ -756,7 +912,7 @@ main{
 }
 
 /* mobile */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .footer{
         flex-direction: column;
         justify-content: space-around;
@@ -765,4 +921,14 @@ main{
     .footer section{
         margin-top: 0;
     }
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .footer{
+        padding: 0 2em 0 2em;
+        justify-content: space-around;
+        margin-top: 2em;
+    }
+
 }
