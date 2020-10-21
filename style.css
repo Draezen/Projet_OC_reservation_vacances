@@ -33,7 +33,7 @@ Mise en forme Projet 2 : Reservia
 
 body{
     font-family: 'Raleway-Medium';
-    width: 90em;
+    width: 85em;
     margin: auto;
 }
 
@@ -507,7 +507,7 @@ main{
     background-color: #F2F2F2;
     border-radius: 1.6em;
     flex-grow: 3;
-    max-width: 49em;
+    max-width: 45em;
     height: 35em;
     margin: 0 0 1.8em 0;
     padding: 1.8em 2em;
@@ -601,7 +601,7 @@ main{
     .hostel-section{
         width: 100%;
         max-width: 100%;
-        height: 38em;
+        height: 52em;
         padding: 0;
         order: 3;
     }
@@ -614,7 +614,7 @@ main{
         margin-bottom: 0.8em;
     }
     .hostel-prev{
-        width: 28%;
+        width: 47%;
     }
     .hostel-section__footer{
         margin: 0 0 0 1.2em;
@@ -868,8 +868,8 @@ main{
         height: 90%;
     }
     .activity-prev{
-        width: 30%;
-        height: 50%;  
+        width: 47%;
+        height: 31%;  
         margin: 0 0 1.5em 0;
     }
     .activity-prev__image{
@@ -878,7 +878,7 @@ main{
     .activity-prev__caption{
         text-align: center;
         margin: 0;
-        padding: 1em 0 0 0;
+        padding: 0.5em 0 0 0;
     }
 }
 
